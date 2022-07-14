@@ -1,0 +1,38 @@
+<!-- <a
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  style="color: black; text-decoration: none; cursor: pointer; width: 21rem;"
+  class="list-group-item"
+>
+  <div class="card m-1" style="width: 18rem">
+    <img
+      src="{{ recepies.imgPath }}"
+      class="card-img-top img-fluid"
+      alt="{{ recepies.name }}"
+      style="height: 286px; width: 286px"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ recepies.name }}</h5>
+      <p class="card-text">{{ recepies.description }}</p>
+    </div>
+  </div>
+</a> -->
+
+
+<a
+  style="cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ recepies.name }}</h4>
+    <p class="list-group-item-text">{{ recepies.description }}</p>
+  </div>
+  <span class="pull-right">
+        <img
+          [src]="recepies.imgPath"
+          alt="{{ recepies.name }}"
+          class="img-responsive"
+          style="max-height: 50px;">
+      </span>
+</a>
