@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
 import { RecepieDetailsComponent } from './recepie/recepie-details/recepie-details.component';
 import { RecepieEditComponent } from './recepie/recepie-edit/recepie-edit.component';
 import { RecepieStartComponent } from './recepie/recepie-start/recepie-start.component';
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
     ],
   },
   { path: 'shopping', component: ShopingComponent },
+  {path : 'auth', component: AuthComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

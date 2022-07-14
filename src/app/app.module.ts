@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecepieStartComponent } from './recepie/recepie-start/recepie-start.component';
 import { RecepieEditComponent } from './recepie/recepie-edit/recepie-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [			
@@ -27,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RecepieDetailsComponent,
     RecepieStartComponent,
     RecepieEditComponent,
+    AuthComponent
    ],
   imports: [
     BrowserModule,
